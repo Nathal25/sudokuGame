@@ -8,7 +8,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class GameStage extends Stage {
-//Test second commit
 
     public GameStage() throws IOException {
         FXMLLoader loader;
