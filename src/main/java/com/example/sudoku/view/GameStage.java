@@ -15,7 +15,7 @@ public class GameStage extends Stage {
         Parent root = loader.load();
         Scene scene = new Scene(root);
         setTitle("JUEGO DE SUDOKU");
-        setResizable(false);
+        setResizable(true);
         setScene(scene);
         show();
     }

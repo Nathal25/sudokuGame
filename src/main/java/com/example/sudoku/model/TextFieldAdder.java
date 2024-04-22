@@ -2,14 +2,13 @@ package com.example.sudoku.model;
 
 import javafx.scene.control.TextField;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class TextFieldAdder {
+    private String id;
     private TextField textField;
 
-    public TextFieldAdder() {
-
+    public TextFieldAdder(String id) {
+        this.id=id;
         textField = new TextField();
         textField.setEditable(false);
         textField.setMaxWidth(37);
@@ -18,5 +17,8 @@ public class TextFieldAdder {
     public TextField getTextField() {return textField;}
 
     public void setTextField(TextField textField) {this.textField = textField;}
+
+    public String getId() {return id;}
+    public void setId(String id) {this.id = id;}
 
 }
