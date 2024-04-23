@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="Se agregó una clase que permite generar distintos juegos de sudoku, además se implementó un boton que permite generar un nuevo sudoku">
+    <list default="true" id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -37,13 +41,6 @@
     &quot;accountId&quot;: &quot;d292b1fd-c9f7-498a-ac00-39daeb32c2ff&quot;
   }
 }</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -58,36 +55,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;nog&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/natis/IdeaProjects/sudoku - copia (2)&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "nog",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/natis/IdeaProjects/sudoku - copia (2)",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.sudoku.model" />
     </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -112,8 +102,8 @@
       <workItem from="1713466488457" duration="3335000" />
       <workItem from="1713642207075" duration="8643000" />
       <workItem from="1713655071406" duration="8423000" />
-      <workItem from="1713722247768" duration="19438000" />
-      <workItem from="1713821101094" duration="1699000" />
+      <workItem from="1713722247768" duration="16979000" />
+      <workItem from="1713828415723" duration="3623000" />
     </task>
     <task id="LOCAL-00001" summary="simple test to verify the connection">
       <option name="closed" value="true" />
@@ -163,15 +153,7 @@
       <option name="project" value="LOCAL" />
       <updated>1713642528915</updated>
     </task>
-    <task id="LOCAL-00007" summary="Se agregó una clase que permite generar distintos juegos de sudoku, además se implementó un boton que permite generar un nuevo sudoku">
-      <option name="closed" value="true" />
-      <created>1713749275467</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1713749275467</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +176,6 @@
     <MESSAGE value="Se agregan numeros random del 1 al 9 en los textField" />
     <MESSAGE value="Se añadió una clase que genera los textFiel. Después algunos de los numeros son visibles y otros no" />
     <MESSAGE value="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector" />
-    <MESSAGE value="Se agregó una clase que permite generar distintos juegos de sudoku, además se implementó un boton que permite generar un nuevo sudoku" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agregó una clase que permite generar distintos juegos de sudoku, además se implementó un boton que permite generar un nuevo sudoku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector" />
   </component>
 </project>
