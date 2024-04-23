@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+ jpab
+    <list default="true" id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector" />
+
     <list default="true" id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" afterDir="false" />
     </list>
+ main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,18 +33,35 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Nathal25&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "assignee": "Nathal25"
+    }
+  ],
+  "lastFilter": {
+    "assignee": "Nathal25"
   }
+ jpab
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c659d38c-94c9-4291-80d6-6c3a073b9d8a" />
+        <option name="url" value="https://github.com/Nathal25/sudokuGame.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Nathal25/sudokuGame.git&quot;,
-    &quot;accountId&quot;: &quot;d292b1fd-c9f7-498a-ac00-39daeb32c2ff&quot;
-  }
-}</component>
+ main
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -62,7 +83,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "nog",
+    "git-widget-placeholder": "jpab",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/natis/IdeaProjects/sudoku - copia (2)",
     "node.js.detected.package.eslint": "true",
@@ -153,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713642528915</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector">
+      <option name="closed" value="true" />
+      <created>1713760908264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713760908264</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector">
+      <option name="closed" value="true" />
+      <created>1713769252984</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713769252984</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

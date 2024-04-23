@@ -95,7 +95,7 @@ public class GameController {
             activeButton = btnNine;
         });
         int[][] boardIncomplete = board.getBoardIncomplete();
-        int[][] copyBoardIncomplete=boardIncomplete;
+        int[][] copyBoardIncomplete = boardIncomplete;
         int[][] boardComplete = board.getBoardSolution();
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
@@ -106,7 +106,9 @@ public class GameController {
                 //Hace que se agreguen los valores en las casillas vacias
                 campoText.setOnMouseClicked(event -> {
                     if (activeButton != null) { // Verificar si hay un botón activo
-                        if (campoText.getText().trim().isEmpty()) { // Verificar si el campo de texto está vacío
+                        int a = Character.getNumericValue(id.charAt(0));
+                        int b = Character.getNumericValue(id.charAt(1));
+                        if (copyBoardIncomplete[a][b] == 0){ // Verifica si el campo de texto estaba originalmente vacío
                             buttonText = activeButton.getText();
                             campoText.setText(buttonText); // Establecer el texto del campo de texto según el botón activo
                             System.out.println("Se agregó el número " + buttonText + " a la casilla con ID: " + id);
@@ -118,10 +120,10 @@ public class GameController {
                 // Establece el texto del campo de texto según los valores de la matriz
                 if (copyBoardIncomplete[i][j] == 0) {
                     campoText.setText(" ");
-                    campoText.setEditable(true);
+                    //campoText.setEditable(true);
                 } else {
                     campoText.setText(String.valueOf(boardIncomplete[i][j]));
-                    campoText.setEditable(false);
+                    //campoText.setEditable(false);
                 }
 
                 if (id.equals("01")) {

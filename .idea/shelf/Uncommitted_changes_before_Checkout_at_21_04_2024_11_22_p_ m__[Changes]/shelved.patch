@@ -1,0 +1,19 @@
+Index: src/main/java/com/example/sudoku/model/TextFieldAdder.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.sudoku.model;\r\n\r\nimport javafx.scene.control.TextField;\r\n\r\n\r\npublic class TextFieldAdder {\r\n    private String id;\r\n    private TextField textField;\r\n\r\n    public TextFieldAdder(String id) {\r\n        this.id=id;\r\n        textField = new TextField();\r\n        textField.setEditable(false);\r\n        textField.setMaxWidth(37);\r\n        textField.setMaxHeight(37);\r\n    }\r\n    public TextField getTextField() {return textField;}\r\n\r\n    public void setTextField(TextField textField) {this.textField = textField;}\r\n\r\n    public String getId() {return id;}\r\n    public void setId(String id) {this.id = id;}\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/sudoku/model/TextFieldAdder.java b/src/main/java/com/example/sudoku/model/TextFieldAdder.java
+--- a/src/main/java/com/example/sudoku/model/TextFieldAdder.java	(revision 673535266a80d52b6239a1d7d8c89ffb58ac603b)
++++ b/src/main/java/com/example/sudoku/model/TextFieldAdder.java	(date 1713759428032)
+@@ -10,7 +10,7 @@
+     public TextFieldAdder(String id) {
+         this.id=id;
+         textField = new TextField();
+-        textField.setEditable(false);
++        textField.setEditable(true);
+         textField.setMaxWidth(37);
+         textField.setMaxHeight(37);
+     }
