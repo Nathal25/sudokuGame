@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+ jpab
     <list default="true" id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector" />
+
+    <list default="true" id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" afterDir="false" />
+    </list>
+ main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +42,7 @@
   "lastFilter": {
     "assignee": "Nathal25"
   }
+ jpab
 }]]></component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -51,6 +59,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+
+}</component>
+ main
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -69,6 +80,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "jpab",
@@ -87,14 +99,6 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.sudoku.model" />
     </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -120,6 +124,7 @@
       <workItem from="1713642207075" duration="8643000" />
       <workItem from="1713655071406" duration="8423000" />
       <workItem from="1713722247768" duration="16979000" />
+      <workItem from="1713828415723" duration="3623000" />
     </task>
     <task id="LOCAL-00001" summary="simple test to verify the connection">
       <option name="closed" value="true" />
