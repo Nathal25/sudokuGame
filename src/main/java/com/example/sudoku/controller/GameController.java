@@ -8,12 +8,21 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class GameController {
+    @FXML
+    private Button btnDelete;
+
+    @FXML
+    private Button btnVerify;
+
     @FXML
     private Button btnEight;
 
@@ -49,29 +58,28 @@ public class GameController {
     private TextField campoText;
     private TextField campoTextEnfocado;
 
-    private ArrayList<Integer>[] numerosEnFila;
-    private ArrayList<Integer>[] numerosEnColumna;
+
     private Button activeButton = null; // Botón activo
 
     private String buttonText;
 
     @FXML
     public void initialize() {
-        numerosEnFila = new ArrayList[9];
-        numerosEnColumna = new ArrayList[9];
+
         board = new Board();
-
-        for (int i = 0; i < 9; i++) {
-            numerosEnFila[i] = new ArrayList<>();
-            numerosEnColumna[i] = new ArrayList<>();
-        }
-
-        btnOne.setOnAction(event -> {
-            activeButton = btnOne; // Establecer btnOne como el botón activo
+        Button btnControlBorrador=new Button();
+        btnControlBorrador.setText("");
+        btnDelete.setOnAction(event ->{
+            activeButton = btnDelete;
+            activeButton.setText(btnControlBorrador.getText());
         });
 
+        //El boton activo se va a establecer de acuerdo al boton seleccionado
+        btnOne.setOnAction(event -> {
+            activeButton = btnOne;
+        });
         btnTwo.setOnAction(event -> {
-            activeButton = btnTwo; // Establecer btnTwo como el botón activo
+            activeButton = btnTwo;
         });
         btnThree.setOnAction(event -> {
             activeButton = btnThree;
@@ -94,9 +102,13 @@ public class GameController {
         btnNine.setOnAction(event ->{
             activeButton = btnNine;
         });
+
+
         int[][] boardIncomplete = board.getBoardIncomplete();
-        int[][] copyBoardIncomplete = boardIncomplete;
-        int[][] boardComplete = board.getBoardSolution();
+        int[][] copyBoardIncomplete = new int[9][9];
+        for (int i = 0; i < 9; i++) {
+            System.arraycopy(boardIncomplete[i], 0, copyBoardIncomplete[i], 0, 9);
+        }
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 buttonText=new String();
@@ -112,7 +124,6 @@ public class GameController {
                             buttonText = activeButton.getText();
                             campoText.setText(buttonText); // Establecer el texto del campo de texto según el botón activo
                             System.out.println("Se agregó el número " + buttonText + " a la casilla con ID: " + id);
-
                         }
                     }
                 });
@@ -123,6 +134,7 @@ public class GameController {
                     //campoText.setEditable(true);
                 } else {
                     campoText.setText(String.valueOf(boardIncomplete[i][j]));
+                    campoText.setStyle("-fx-background-color: #E9E6E6;");
                     //campoText.setEditable(false);
                 }
 
@@ -135,6 +147,27 @@ public class GameController {
 
             }
         }
+        int[][] boardComplete = board.getBoardSolution();
+        btnVerify.setOnAction(event -> {
+            boolean areEqual = true;
+            // Verifica si las matrices son iguales elemento por elemento
+            for (int i = 0; i < 9; i++) {
+                for (int j = 0; j < 9; j++) {
+                    if (boardComplete[i][j] != copyBoardIncomplete[i][j]) {
+                        areEqual = false;
+                        break; // No es necesario seguir verificando si ya encontramos una diferencia
+                    }
+                }
+                if (!areEqual) {
+                    break; // No es necesario seguir verificando si ya encontramos una diferencia
+                }
+            }
+            if (areEqual) {
+                System.out.println("Los tableros son iguales, has ganado el juego");
+            } else {
+                System.out.println("Sigue intentando");
+            }
+        });
     }
 
     private void textFieldLetterGiven(TextField textField, int i, int j){
