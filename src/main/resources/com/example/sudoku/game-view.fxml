@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="648.0" style="-fx-background-color: D8DCFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sudoku.controller.GameController">
@@ -154,6 +155,10 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Line endX="231.0" layoutX="140.0" layoutY="154.0" startX="-98.0" />
+            <Line endX="231.0" layoutX="140.0" layoutY="264.0" startX="-98.0" />
+            <Line endX="-100.0" endY="329.0" layoutX="364.0" layoutY="42.0" startX="-100.0" />
+            <Line endX="-100.0" endY="329.0" layoutX="253.0" layoutY="43.0" startX="-100.0" />
          </children>
       </AnchorPane>
    </children>

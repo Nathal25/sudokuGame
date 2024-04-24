@@ -8,13 +8,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
-import javafx.scene.paint.Color;
 
-import java.util.ArrayList;
-import java.util.Random;
 
 public class GameController {
     @FXML
@@ -53,10 +48,12 @@ public class GameController {
     private GridPane gridPaneSudoku;
 
     private Board board;
-
+/*
     private TextFieldAdder textFieldAdder;
     private TextField campoText;
     private TextField campoTextEnfocado;
+
+ */
 
 
     private Button activeButton = null; // Botón activo
@@ -121,7 +118,7 @@ public class GameController {
                     if (activeButton != null) { // Verificar si hay un botón activo
                         int a = Character.getNumericValue(id.charAt(0));
                         int b = Character.getNumericValue(id.charAt(1));
-                        if (copyBoardIncomplete[a][b] == 0){ // Verifica si el campo de texto estaba originalmente vacío
+                        if (boardIncomplete[a][b] == 0){ // Verifica si el campo de texto estaba originalmente vacío
                             buttonText = activeButton.getText();
                             campoText.setText(buttonText); // Establecer el texto del campo de texto según el botón activo
                             copyBoardIncomplete[a][b] = Integer.parseInt(buttonText); // Actualiza copyBoardIncomplete
@@ -136,7 +133,7 @@ public class GameController {
                     //campoText.setEditable(true);
                 } else {
                     campoText.setText(String.valueOf(boardIncomplete[i][j]));
-                    campoText.setStyle("-fx-background-color: #E9E6E6;");
+                    campoText.setStyle("-fx-background-color: #ffffff;");
                     //campoText.setEditable(false);
                 }
 
@@ -189,7 +186,7 @@ public class GameController {
         // Eliminar todos los nodos existentes en gridPaneSudoku
         gridPaneSudoku.getChildren().clear();
 
-        // Volver a llamar al método initialize para volver a generar todo
+        // Volver a llamar al método initialize para volver a generar
         initialize();
     }
 }
