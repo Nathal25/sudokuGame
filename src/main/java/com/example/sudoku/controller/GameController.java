@@ -133,7 +133,7 @@ public class GameController {
                     //campoText.setEditable(true);
                 } else {
                     campoText.setText(String.valueOf(boardIncomplete[i][j]));
-                    campoText.setStyle("-fx-background-color: #ffffff;");
+                    campoText.setStyle("-fx-background-color: #eaeaea;");
                     //campoText.setEditable(false);
                 }
 

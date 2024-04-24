@@ -72,8 +72,6 @@ public class Board {
 
         };
 
-        }
-
         int sudokuComplete6[][]={
                 {9,3,6,5,1,2,7,4,8},
                 {1,2,5,4,8,7,3,6,9},
@@ -87,9 +85,6 @@ public class Board {
 
 
         };
-
-        }
-
 
         //Sudoku Incomplete
 
@@ -162,8 +157,6 @@ public class Board {
                 {0,0,1,8,5,0,2,3,0},
 
         };
-
-        }
 
         ArrayList<int[][]> sudokusIncompletesAvailables=new ArrayList<>();
         sudokusIncompletesAvailables.add(sudokuIncomplete1);
