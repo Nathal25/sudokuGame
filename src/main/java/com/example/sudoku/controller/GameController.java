@@ -8,13 +8,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
-import javafx.scene.paint.Color;
 
-import java.util.ArrayList;
-import java.util.Random;
 
 public class GameController {
     @FXML
@@ -54,12 +49,7 @@ public class GameController {
 
     private Board board;
 
-    private TextFieldAdder textFieldAdder;
-    private TextField campoText;
-    private TextField campoTextEnfocado;
-
-
-    private Button activeButton = null; // Botón activo
+    private Button activeButton = null;
 
     private String buttonText;
 
@@ -67,14 +57,14 @@ public class GameController {
     public void initialize() {
 
         board = new Board();
-        Button btnControlBorrador=new Button();
-        btnControlBorrador.setText("");
+        Button btnControlEraser=new Button();
+        btnControlEraser.setText("");
         btnDelete.setOnAction(event ->{
             activeButton = btnDelete;
-            activeButton.setText(btnControlBorrador.getText());
+            activeButton.setText(btnControlEraser.getText());
         });
 
-        //El boton activo se va a establecer de acuerdo al boton seleccionado
+        //activeButton will establish base on the button selected
         btnOne.setOnAction(event -> {
             activeButton = btnOne;
         });
@@ -106,7 +96,7 @@ public class GameController {
 
         int[][] boardIncomplete = board.getBoardIncomplete();
         int[][] copyBoardIncomplete = new int[9][9];
-        //Permite que se vaya actualizando a medida que se pone un numero en el textField
+        //Allows the copyBoardIncomplete to update based on the number put on the textField
         for (int i = 0; i < 9; i++) {
             System.arraycopy(boardIncomplete[i], 0, copyBoardIncomplete[i], 0, 9);
         }
@@ -115,53 +105,50 @@ public class GameController {
                 buttonText=new String();
                 String id = String.valueOf(i).concat(String.valueOf(j));
                 TextFieldAdder textFieldAdder = new TextFieldAdder(id);
-                TextField campoText = textFieldAdder.getTextField();
-                //Hace que se agreguen los valores en las casillas vacias
-                campoText.setOnMouseClicked(event -> {
-                    if (activeButton != null) { // Verificar si hay un botón activo
+                TextField textField = textFieldAdder.getTextField();
+                //Inserts the numbers on the empty spaces
+                textField.setOnMouseClicked(event -> {
+                    if (activeButton != null) { // Verifies is there is an active button
                         int a = Character.getNumericValue(id.charAt(0));
                         int b = Character.getNumericValue(id.charAt(1));
-                        if (copyBoardIncomplete[a][b] == 0){ // Verifica si el campo de texto estaba originalmente vacío
+                        if (boardIncomplete[a][b] == 0){ // Verifies is the textField was originally empty
                             buttonText = activeButton.getText();
-                            campoText.setText(buttonText); // Establecer el texto del campo de texto según el botón activo
-                            copyBoardIncomplete[a][b] = Integer.parseInt(buttonText); // Actualiza copyBoardIncomplete
+                            textField.setText(buttonText); // Establish the text based on the text of the activeButton
+                            copyBoardIncomplete[a][b] = Integer.parseInt(buttonText); // Updates copyBoardIncomplete
                             System.out.println("Se agregó el número " + buttonText + " a la casilla con ID: " + id);
                         }
                     }
                 });
 
-                // Establece el texto del campo de texto según los valores de la matriz
+                //Establish the textFields based on the values on the array selected on Board
                 if (copyBoardIncomplete[i][j] == 0) {
-                    campoText.setText(" ");
-                    //campoText.setEditable(true);
+                    textField.setText(" ");
                 } else {
-                    campoText.setText(String.valueOf(boardIncomplete[i][j]));
-                    campoText.setStyle("-fx-background-color: #E9E6E6;");
-                    //campoText.setEditable(false);
+                    textField.setText(String.valueOf(boardIncomplete[i][j]));
+                    textField.setStyle("-fx-background-color: #eaeaea;");
                 }
 
                 if (id.equals("01")) {
-                    System.out.println("El valor de este campo es " + campoText.getText());
+                    System.out.println("El valor de este campo es " + textField.getText());
                 }
-                gridPaneSudoku.add(campoText, i, j);
-                textFieldLetterGiven(campoText, i, j);
-
+                gridPaneSudoku.add(textField, i, j);
+                textFieldLetterGiven(textField, i, j);
 
             }
         }
         int[][] boardComplete = board.getBoardSolution();
         btnVerify.setOnAction(event -> {
             boolean areEqual = true;
-            // Verifica si las matrices son iguales elemento por elemento
+            //Verifies if the arrays are equal by verifying its elements
             for (int i = 0; i < 9; i++) {
                 for (int j = 0; j < 9; j++) {
                     if (boardComplete[i][j] != copyBoardIncomplete[i][j]) {
                         areEqual = false;
-                        break; // No es necesario seguir verificando si ya encontramos una diferencia
+                        break; //No longer necessary to verify more elements when one inequality is found
                     }
                 }
                 if (!areEqual) {
-                    break; // No es necesario seguir verificando si ya encontramos una diferencia
+                    break; //No longer necessary to verify more elements when one inequality is found
                 }
             }
             if (areEqual) {
@@ -182,14 +169,14 @@ public class GameController {
     }
     @FXML
     void onHandleButtonRestartGame(ActionEvent event) {
-        // Reiniciar valores necesarios al estado inicial
+        //Restarts the necessary values to their original state
         board = new Board();
         activeButton = null;
 
-        // Eliminar todos los nodos existentes en gridPaneSudoku
+        //Deletes all the elements in the gridPaneSudoku
         gridPaneSudoku.getChildren().clear();
 
-        // Volver a llamar al método initialize para volver a generar todo
+        //Calls back the method initialize() to restart properly
         initialize();
     }
 }

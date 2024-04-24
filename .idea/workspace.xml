@@ -4,241 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-nog
-    <list default="true" id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="la funcion de verificar fue implementada y se agregaron estilos en el game-view">
+    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/TextFieldAdder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/TextFieldAdder.java" afterDir="false" />
     </list>
-
- jpab
-    <list default="true" id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector" />
-
-    <list default="true" id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" afterDir="false" />
-    </list>
- main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaFXApplication" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="jpab" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Nathal25&quot;
-  }
-nog
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Nathal25/sudokuGame.git&quot;,
-    &quot;accountId&quot;: &quot;d292b1fd-c9f7-498a-ac00-39daeb32c2ff&quot;
-  }
-}</component>
-
- jpab
-}]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="c659d38c-94c9-4291-80d6-6c3a073b9d8a" />
-        <option name="url" value="https://github.com/Nathal25/sudokuGame.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-
-}</component>
- main
-main
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="2eeJoBTrWYulcqgQIx8kScSLukX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-nog
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;nog&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/natis/IdeaProjects/sudoku - copia (2)&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "jpab",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/natis/IdeaProjects/sudoku - copia (2)",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
-main
+    "git-widget-placeholder": "nog",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.sudoku.model" />
-    </key>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="77b4caa5-edce-4f78-a284-cf871b84d77a" name="Changes" comment="" />
-      <created>1712259287269</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1712259287269</updated>
-      <workItem from="1712259288341" duration="2762000" />
-      <workItem from="1712793851357" duration="4263000" />
-      <workItem from="1712799748784" duration="441000" />
-      <workItem from="1712800202864" duration="14000" />
-      <workItem from="1712808152303" duration="2467000" />
-      <workItem from="1712856592817" duration="3002000" />
-      <workItem from="1713063663202" duration="1156000" />
-      <workItem from="1713067215765" duration="518000" />
-      <workItem from="1713131625710" duration="3136000" />
-      <workItem from="1713213744329" duration="1766000" />
-      <workItem from="1713223486555" duration="4390000" />
-      <workItem from="1713227954352" duration="1840000" />
-      <workItem from="1713466488457" duration="3335000" />
-      <workItem from="1713642207075" duration="8643000" />
-      <workItem from="1713655071406" duration="8423000" />
-      <workItem from="1713722247768" duration="16979000" />
-      <workItem from="1713828415723" duration="3623000" />
-    </task>
-    <task id="LOCAL-00001" summary="simple test to verify the connection">
+    <task id="LOCAL-00001" summary="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego">
       <option name="closed" value="true" />
-      <created>1713067492947</created>
+      <created>1713920450084</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1713067492948</updated>
+      <updated>1713920450084</updated>
     </task>
-    <task id="LOCAL-00002" summary="Se agregan numeros random del 1 al 9 en los textField">
-      <option name="closed" value="true" />
-      <created>1713133539909</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1713133539909</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Se añadió una clase que genera los textFiel. Después algunos de los numeros son visibles y otros no">
-      <option name="closed" value="true" />
-      <created>1713227814205</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1713227814205</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Se añadió una clase que genera los textFiel. Después algunos de los numeros son visibles y otros no">
-      <option name="closed" value="true" />
-      <created>1713227860069</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1713227860069</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector">
-      <option name="closed" value="true" />
-      <created>1713230079749</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1713230079750</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector">
-      <option name="closed" value="true" />
-      <created>1713642528915</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1713642528915</updated>
-    </task>
-    <task id="LOCAL-00007" summary="la funcion de verificar fue implementada y se agregaron estilos en el game-view">
-      <option name="closed" value="true" />
-      <created>1713914740408</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1713914740409</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simple test to verify the connection" />
-    <MESSAGE value="Se agregan numeros random del 1 al 9 en los textField" />
-    <MESSAGE value="Se añadió una clase que genera los textFiel. Después algunos de los numeros son visibles y otros no" />
-    <MESSAGE value="Se ponen los numeros de forma aleatoria y no se repiten por fila o columna, pero aun se repiten por sector" />
-    <MESSAGE value="la funcion de verificar fue implementada y se agregaron estilos en el game-view" />
-    <option name="LAST_COMMIT_MESSAGE" value="la funcion de verificar fue implementada y se agregaron estilos en el game-view" />
+    <MESSAGE value="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego" />
   </component>
 </project>
