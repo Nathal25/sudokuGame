@@ -2,6 +2,7 @@ package com.example.sudoku.controller;
 
 import com.example.sudoku.model.Board;
 import com.example.sudoku.model.TextFieldAdder;
+import com.example.sudoku.view.alert.AlertBox;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -166,5 +167,17 @@ public class GameController {
 
         //Calls back the method initialize() to restart properly
         initialize();
+    }
+
+    @FXML
+    void onHandleButtonHowToPlay(ActionEvent event) {
+        String tittle="Cómo Jugar";
+        String header ="Tutorial";
+        String content ="El juego de sudoku se juega de la siguiente manera: " +
+                "\nHaz de insertar números de 1 al 9 de tal manera que completes el tablero" +
+                " sin que los numeros se repitan en la columna, en la fila o en el recuadro 3x3 en el que está" +
+                " ubicado.";
+        AlertBox alertBox=new AlertBox();
+        alertBox.showMessage(tittle,header,content);
     }
 }
