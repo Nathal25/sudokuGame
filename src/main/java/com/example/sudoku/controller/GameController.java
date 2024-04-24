@@ -106,6 +106,7 @@ public class GameController {
 
         int[][] boardIncomplete = board.getBoardIncomplete();
         int[][] copyBoardIncomplete = new int[9][9];
+        //Permite que se vaya actualizando a medida que se pone un numero en el textField
         for (int i = 0; i < 9; i++) {
             System.arraycopy(boardIncomplete[i], 0, copyBoardIncomplete[i], 0, 9);
         }
@@ -123,6 +124,7 @@ public class GameController {
                         if (copyBoardIncomplete[a][b] == 0){ // Verifica si el campo de texto estaba originalmente vacío
                             buttonText = activeButton.getText();
                             campoText.setText(buttonText); // Establecer el texto del campo de texto según el botón activo
+                            copyBoardIncomplete[a][b] = Integer.parseInt(buttonText); // Actualiza copyBoardIncomplete
                             System.out.println("Se agregó el número " + buttonText + " a la casilla con ID: " + id);
                         }
                     }
