@@ -3,11 +3,9 @@ package com.example.sudoku.controller;
 import com.example.sudoku.model.Board;
 import com.example.sudoku.model.TextFieldAdder;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 
 
@@ -51,104 +49,93 @@ public class GameController {
 
     private Button activeButton = null;
 
-    private String buttonText;
-
     @FXML
     public void initialize() {
 
         board = new Board();
-        Button btnControlEraser=new Button();
-        btnControlEraser.setText("");
+
         btnDelete.setOnAction(event ->{
             activeButton = btnDelete;
-            activeButton.setText(btnControlEraser.getText());
+            activeButton.setText("");
         });
 
         //activeButton will establish base on the button selected
-        btnOne.setOnAction(event -> {
-            activeButton = btnOne;
-        });
-        btnTwo.setOnAction(event -> {
-            activeButton = btnTwo;
-        });
-        btnThree.setOnAction(event -> {
-            activeButton = btnThree;
-        });
-        btnFour.setOnAction(event -> {
-            activeButton = btnFour;
-        });
-        btnFive.setOnAction(event -> {
-            activeButton = btnFive;
-        });
-        btnSix.setOnAction(event -> {
-            activeButton = btnSix;
-        });
-        btnSeven.setOnAction(event -> {
-            activeButton = btnSeven;
-        });
-        btnEight.setOnAction(event -> {
-            activeButton = btnEight;
-        });
-        btnNine.setOnAction(event ->{
-            activeButton = btnNine;
-        });
+        btnOne.setOnAction(event -> {activeButton = btnOne;});
+        btnTwo.setOnAction(event -> {activeButton = btnTwo;});
+        btnThree.setOnAction(event -> {activeButton = btnThree;});
+        btnFour.setOnAction(event -> {activeButton = btnFour;});
+        btnFive.setOnAction(event -> {activeButton = btnFive;});
+        btnSix.setOnAction(event -> {activeButton = btnSix;});
+        btnSeven.setOnAction(event -> {activeButton = btnSeven;});
+        btnEight.setOnAction(event -> {activeButton = btnEight;});
+        btnNine.setOnAction(event ->{activeButton = btnNine;});
 
 
         int[][] boardIncomplete = board.getBoardIncomplete();
         int[][] copyBoardIncomplete = new int[9][9];
+
         //Allows the copyBoardIncomplete to update based on the number put on the textField
         for (int i = 0; i < 9; i++) {
             System.arraycopy(boardIncomplete[i], 0, copyBoardIncomplete[i], 0, 9);
         }
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-                buttonText=new String();
                 String id = String.valueOf(i).concat(String.valueOf(j));
                 TextFieldAdder textFieldAdder = new TextFieldAdder(id);
                 TextField textField = textFieldAdder.getTextField();
-                //Inserts the numbers on the empty spaces
+                textField.setId(id);
+                //Puts the numbers on the empty fields using the mouse
                 textField.setOnMouseClicked(event -> {
-                    if (activeButton != null) { // Verifies is there is an active button
-                        int a = Character.getNumericValue(id.charAt(0));
-                        int b = Character.getNumericValue(id.charAt(1));
-                        if (boardIncomplete[a][b] == 0){ // Verifies is the textField was originally empty
-                            buttonText = activeButton.getText();
-                            textField.setText(buttonText); // Establish the text based on the text of the activeButton
-                            copyBoardIncomplete[a][b] = Integer.parseInt(buttonText); // Updates copyBoardIncomplete
-                            System.out.println("Se agregó el número " + buttonText + " a la casilla con ID: " + id);
-                        }
+                    if(textField.getText().contains(" ")){
+                        textField.setEditable(true);
+
+                    }
+                    if (activeButton != null) { // Verifies is there's the active boton setted
+                        addNumberToTextField(id, textField, activeButton.getText(), boardIncomplete, copyBoardIncomplete);
+                    }
+                });
+                textField.setOnKeyTyped(eventK -> {
+                    String input = eventK.getCharacter(); // Gets the character put by the user
+                    //Verifies if the given character matches a number between 1-9
+                    if (input.matches("[1-9]")) {
+                        textField.setText(input); //Establish the text in the textField based on the text given
+                        addNumberToTextField(id, textField, input, boardIncomplete, copyBoardIncomplete); //Inserts the number on the textField
+                    } else {
+                        // Si el carácter ingresado no es un número del 1 al 9, consume el evento para evitar que se muestre en el campo de texto
+                        //If the character given do not match a number then it will not be shown
+                        textField.setText(" ");
+                        eventK.consume();
                     }
                 });
 
-                //Establish the textFields based on the values on the array selected on Board
+                //Inserts the numbers in the textFields based on the array selected from Board
                 if (copyBoardIncomplete[i][j] == 0) {
                     textField.setText(" ");
                 } else {
                     textField.setText(String.valueOf(boardIncomplete[i][j]));
-                    textField.setStyle("-fx-background-color: #eaeaea;");
+                    textField.setStyle("-fx-background-color: #eaeaea;");//Sets a background color to the textFields with numbers assigned priorly
                 }
 
                 if (id.equals("01")) {
                     System.out.println("El valor de este campo es " + textField.getText());
                 }
-                gridPaneSudoku.add(textField, i, j);
-                textFieldLetterGiven(textField, i, j);
 
+                gridPaneSudoku.add(textField, i, j);
             }
         }
         int[][] boardComplete = board.getBoardSolution();
         btnVerify.setOnAction(event -> {
             boolean areEqual = true;
-            //Verifies if the arrays are equal by verifying its elements
+            //Verifies if the arrays are equal by checking each element
             for (int i = 0; i < 9; i++) {
                 for (int j = 0; j < 9; j++) {
                     if (boardComplete[i][j] != copyBoardIncomplete[i][j]) {
                         areEqual = false;
-                        break; //No longer necessary to verify more elements when one inequality is found
+                        break; //No longer verifies when one inequality is found
                     }
                 }
                 if (!areEqual) {
-                    break; //No longer necessary to verify more elements when one inequality is found
+                    break; //No longer verifies when one inequality is found
                 }
             }
             if (areEqual) {
@@ -158,15 +145,16 @@ public class GameController {
             }
         });
     }
-
-    private void textFieldLetterGiven(TextField textField, int i, int j){
-        textField.setOnKeyTyped(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent keyEvent) {
-
-            }
-        });
+    private void addNumberToTextField(String id, TextField textField, String numberToAdd, int[][] boardIncomplete, int[][] copyBoardIncomplete) {
+        int a = Character.getNumericValue(id.charAt(0));
+        int b = Character.getNumericValue(id.charAt(1));
+        if (boardIncomplete[a][b] == 0) { //Verifies if the textField was originally empty -or it had a zero assigned in the array
+            textField.setText(numberToAdd); //Establish the number based in the given number to add
+            copyBoardIncomplete[a][b] = Integer.parseInt(numberToAdd); // Updates copyBoardIncomplete
+            System.out.println("Se agregó el número " + numberToAdd + " a la casilla con ID: " + id);
+        }
     }
+
     @FXML
     void onHandleButtonRestartGame(ActionEvent event) {
         //Restarts the necessary values to their original state

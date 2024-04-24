@@ -4,27 +4,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego">
+    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/TextFieldAdder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/model/TextFieldAdder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Nathal25"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Nathal25/sudokuGame.git",
+    "accountId": "d292b1fd-c9f7-498a-ac00-39daeb32c2ff"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2fYZvPzr24eNcVLhqrp5YMN5Di8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "nog",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/natis/IdeaProjects/sudoku - copia",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego">
       <option name="closed" value="true" />
@@ -34,11 +71,47 @@
       <option name="project" value="LOCAL" />
       <updated>1713920450084</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego">
+      <option name="closed" value="true" />
+      <created>1713922232183</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713922232184</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego" />
+      <created>1713980209528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713980209528</updated>
+      <workItem from="1713980210763" duration="9715000" />
+    </task>
+    <task id="LOCAL-00003" summary="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible">
+      <option name="closed" value="true" />
+      <created>1713989012189</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713989012189</updated>
+    </task>
+    <task id="LOCAL-00004" summary="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible">
+      <option name="closed" value="true" />
+      <created>1713989744496</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713989744496</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego" />
+    <MESSAGE value="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible" />
+    <option name="LAST_COMMIT_MESSAGE" value="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible" />
   </component>
 </project>
