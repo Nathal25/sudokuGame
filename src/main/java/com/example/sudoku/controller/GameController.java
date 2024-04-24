@@ -92,14 +92,6 @@ public class GameController {
                     }
                 });
 
-                // Insertar números en las casillas vacías mediante el teclado
-                textField.setOnKeyPressed(event -> {
-                    String keyPressed = event.getText();
-                    if (keyPressed.matches("[1-9]")) { // Verifica si la tecla presionada es un número del 1 al 9
-                        addNumberToTextField(id, textField, keyPressed, boardIncomplete, copyBoardIncomplete);
-                    }
-                });
-
                 // Establece el textoFields basado en los valores en la matriz seleccionada en Board
                 if (copyBoardIncomplete[i][j] == 0) {
                     textField.setText(" ");
