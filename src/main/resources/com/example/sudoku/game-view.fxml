@@ -30,6 +30,14 @@
                   <Font name="Roboto Black" size="26.0" />
                </font>
             </Label>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onHandleButtonHowToPlay" prefHeight="31.0" prefWidth="23.0" style="-fx-background-color: #40476d; -fx-background-radius: 10;" text="?" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Black" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </HBox>
       <AnchorPane prefHeight="435.0" prefWidth="593.0" style="-fx-background-color: D8DCFF;" GridPane.columnSpan="3" GridPane.rowIndex="1">
