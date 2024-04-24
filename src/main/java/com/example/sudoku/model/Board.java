@@ -9,7 +9,7 @@ public class Board {
         boardSolution=new int[9][9];
         boardIncomplete=new int[9][9];
 
-        //Sudoku Complete
+        //Sudokus Completes
 
         int sudokuComplete1[][]={
                 {2,6,1,3,7,9,8,5,4},
@@ -86,7 +86,7 @@ public class Board {
 
         };
 
-        //Sudoku Incomplete
+        //Sudokus Incompletes
 
         int sudokuIncomplete1[][]={
             {2,6,0,3,0,0,0,5,0},
@@ -158,30 +158,37 @@ public class Board {
 
         };
 
-        ArrayList<int[][]> sudokusIncompletesAvailables=new ArrayList<>();
-        sudokusIncompletesAvailables.add(sudokuIncomplete1);
-        sudokusIncompletesAvailables.add(sudokuIncomplete2);
-        sudokusIncompletesAvailables.add(sudokuIncomplete3);
-        sudokusIncompletesAvailables.add(sudokuIncomplete4);
-        sudokusIncompletesAvailables.add(sudokuIncomplete5);
-        sudokusIncompletesAvailables.add(sudokuIncomplete6);
+        //Sets all the inCompleteSudokus in one arrayList
+        ArrayList<int[][]> incompleteSudokus=new ArrayList<>();
+        incompleteSudokus.add(sudokuIncomplete1);
+        incompleteSudokus.add(sudokuIncomplete2);
+        incompleteSudokus.add(sudokuIncomplete3);
+        incompleteSudokus.add(sudokuIncomplete4);
+        incompleteSudokus.add(sudokuIncomplete5);
+        incompleteSudokus.add(sudokuIncomplete6);
 
-        ArrayList<int[][]> sudokusCompletesAvailables=new ArrayList<>();
-        sudokusCompletesAvailables.add(sudokuComplete1);
-        sudokusCompletesAvailables.add(sudokuComplete2);
-        sudokusCompletesAvailables.add(sudokuComplete3);
-        sudokusCompletesAvailables.add(sudokuComplete4);
-        sudokusCompletesAvailables.add(sudokuComplete5);
-        sudokusCompletesAvailables.add(sudokuComplete6);
+        //Sets all the completeSudokus in one arrayList
+        ArrayList<int[][]> completeSudokus=new ArrayList<>();
+        completeSudokus.add(sudokuComplete1);
+        completeSudokus.add(sudokuComplete2);
+        completeSudokus.add(sudokuComplete3);
+        completeSudokus.add(sudokuComplete4);
+        completeSudokus.add(sudokuComplete5);
+        completeSudokus.add(sudokuComplete6);
 
-        //Permite que se genere alguno de los sudokus preparados
-        int sudokuAleatorio=(int)(Math.random()*sudokusIncompletesAvailables.size());
-        boardIncomplete=sudokusIncompletesAvailables.get(sudokuAleatorio);  //se selecciona un sudoku de la lista en base al numero aleatorio
-        boardSolution=sudokusCompletesAvailables.get(sudokuAleatorio);      //Se selecciona el sudoku respuesta con el mismo numero que el anterior
+        //Allows that one of the given sudoku to be generated
+        int randomSudoku=(int)(Math.random()*incompleteSudokus.size());
+        boardIncomplete=incompleteSudokus.get(randomSudoku);  //Selects of the sudokus on the arrayList based on a random number and the position that corresponds in the arrayList
+        boardSolution=completeSudokus.get(randomSudoku);      //Based on the same previous random number a complete sudoku is selected in the arrayList
 
     }
-    public int[][] getBoardSolution() {return boardSolution;}
-    public int[][] getBoardIncomplete() {return boardIncomplete;}
+    public int[][] getBoardSolution() {
+        return boardSolution;
+    }
+
+    public int[][] getBoardIncomplete() {
+        return boardIncomplete;
+    }
 
     public void setBoardIncomplete(int[][] boardIncomplete) {
         this.boardIncomplete = boardIncomplete;

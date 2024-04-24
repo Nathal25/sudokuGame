@@ -18,7 +18,6 @@ public class TextFieldAdder {
         textField.setMaxHeight(37);
         textField.setAlignment(Pos.CENTER);
         textField.setStyle("-fx-background-color: #ffffff;");
-    //    textField.setBackground(new Background(new BackgroundFill(Color.rgb(255, 255, 255), null, null)));
         textField.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.DOTTED, CornerRadii.EMPTY, new BorderWidths(1))));
     }
     public TextField getTextField() {return textField;}
