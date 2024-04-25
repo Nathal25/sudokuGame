@@ -6,9 +6,13 @@ import com.example.sudoku.view.alert.AlertBox;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 
+import javax.swing.text.Element;
 import java.util.ArrayList;
 
 
@@ -52,6 +56,7 @@ public class GameController {
 
     private Button activeButton = null;
 
+
     @FXML
     public void initialize() {
 
@@ -61,7 +66,6 @@ public class GameController {
             activeButton = btnDelete;
             activeButton.setText(" ");
         });
-
         //activeButton will establish base on the button selected
         btnOne.setOnAction(event -> {activeButton = btnOne;});
         btnTwo.setOnAction(event -> {activeButton = btnTwo;});
@@ -136,6 +140,7 @@ public class GameController {
 
                 gridPaneSudoku.add(textField, i, j);
             }
+
         }
         //Here the verification of the board it's done
         int[][] boardComplete = board.getBoardSolution();
