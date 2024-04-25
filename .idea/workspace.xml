@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/view/alert/AlertBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/view/alert/IAlertBox.java" afterDir="false" />
+    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés, se ingresó tambien una interfaz que explica como jugar el sudoku">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sudoku/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sudoku/game-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,21 +23,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Nathal25"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nathal25&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Nathal25/sudokuGame.git",
-    "accountId": "d292b1fd-c9f7-498a-ac00-39daeb32c2ff"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nathal25/sudokuGame.git&quot;,
+    &quot;accountId&quot;: &quot;d292b1fd-c9f7-498a-ac00-39daeb32c2ff&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;Nathal25&quot;,
+    &quot;repository&quot;: &quot;sudokuGame&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2fYZvPzr24eNcVLhqrp5YMN5Di8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,20 +56,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "nog",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/natis/IdeaProjects/sudoku - copia",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nog&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/natis/IdeaProjects/sudoku - copia&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,7 +102,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713980209528</updated>
-      <workItem from="1713980210763" duration="11099000" />
+      <workItem from="1713980210763" duration="12368000" />
+      <workItem from="1714007847205" duration="312000" />
     </task>
     <task id="LOCAL-00003" summary="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible">
       <option name="closed" value="true" />
@@ -122,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713995002766</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés, se ingresó tambien una interfaz que explica como jugar el sudoku">
+      <option name="closed" value="true" />
+      <created>1713996414383</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713996414383</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +147,7 @@
     <MESSAGE value="Se agregaron lineas en el game-view para que sea más agradable a la vista el juego" />
     <MESSAGE value="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible" />
     <MESSAGE value="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés" />
-    <option name="LAST_COMMIT_MESSAGE" value="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés" />
+    <MESSAGE value="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés, se ingresó tambien una interfaz que explica como jugar el sudoku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés, se ingresó tambien una interfaz que explica como jugar el sudoku" />
   </component>
 </project>
