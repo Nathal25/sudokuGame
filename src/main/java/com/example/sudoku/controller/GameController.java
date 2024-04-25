@@ -111,7 +111,6 @@ public class GameController {
                         textField.setText(input); //Establish the text in the textField based on the text given
                         addNumberToTextField(id, textField, input, boardIncomplete, copyBoardIncomplete); //Inserts the number on the textField
                     } else {
-                        // Si el carácter ingresado no es un número del 1 al 9, consume el evento para evitar que se muestre en el campo de texto
                         //If the character given do not match a number then it will not be shown
                         textField.setText(" ");
                         eventK.consume();
