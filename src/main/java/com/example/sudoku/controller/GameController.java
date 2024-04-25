@@ -6,15 +6,8 @@ import com.example.sudoku.view.alert.AlertBox;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
-
-import javax.swing.text.Element;
-import java.util.ArrayList;
-
 
 public class GameController {
     @FXML
@@ -55,7 +48,7 @@ public class GameController {
     private Board board;
 
     private Button activeButton = null;
-
+    private boolean controlButton=false;
 
     @FXML
     public void initialize() {
@@ -67,7 +60,8 @@ public class GameController {
             activeButton.setText(" ");
         });
         //activeButton will establish base on the button selected
-        btnOne.setOnAction(event -> {activeButton = btnOne;});
+        btnOne.setOnAction(event -> {activeButton = btnOne;
+        controlButton=true;});
         btnTwo.setOnAction(event -> {activeButton = btnTwo;});
         btnThree.setOnAction(event -> {activeButton = btnThree;});
         btnFour.setOnAction(event -> {activeButton = btnFour;});
@@ -159,7 +153,8 @@ public class GameController {
                 }
             }
             if (areEqual) {
-                System.out.println("Los tableros son iguales, has ganado el juego");
+
+            System.out.println("Los tableros son iguales, has ganado el juego");
                 String tittle="Juego Finalizado";
                 String header ="¡GANASTE!";
                 String content ="¡Felicidades! Has ganado el juego";
