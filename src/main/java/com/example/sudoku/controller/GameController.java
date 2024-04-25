@@ -155,8 +155,18 @@ public class GameController {
             }
             if (areEqual) {
                 System.out.println("Los tableros son iguales, has ganado el juego");
+                String tittle="Juego Finalizado";
+                String header ="¡GANASTE!";
+                String content ="¡Felicidades! Has ganado el juego";
+                AlertBox alertBox=new AlertBox();
+                alertBox.showMessageWinner(tittle,header,content);
             } else {
                 System.out.println("Sigue intentando");
+                String tittle="Sigue intentando";
+                String header ="¡AÚN PUEDES CONSEGUIRLO!";
+                String content ="Sigue intentandolo!";
+                AlertBox alertBox=new AlertBox();
+                alertBox.showMessageLoser(tittle,header,content);
             }
         });
     }
