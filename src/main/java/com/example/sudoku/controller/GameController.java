@@ -73,7 +73,7 @@ public class GameController {
         btnEight.setOnAction(event -> {activeButton = btnEight;});
         btnNine.setOnAction(event ->{activeButton = btnNine;});
 
-        Button[] buttons = {btnOne, btnTwo, btnThree, btnFour, btnFive, btnSix, btnSeven, btnEight, btnNine};
+        Button[] buttons = {btnOne, btnTwo, btnThree, btnFour, btnFive, btnSix, btnSeven, btnEight, btnNine,btnDelete};
         //This cycle allows each button to change its color when is presed
         for (Button button : buttons) {
             button.setOnAction(eventB -> {
@@ -137,6 +137,7 @@ public class GameController {
                 gridPaneSudoku.add(textField, i, j);
             }
         }
+        //Here the verification of the board it's done
         int[][] boardComplete = board.getBoardSolution();
         btnVerify.setOnAction(event -> {
             boolean areEqual = true;
