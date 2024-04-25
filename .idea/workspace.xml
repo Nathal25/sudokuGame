@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Se añadió alerts cuando el jugador gana el juego o cuando aun no lo ha terminado">
+    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Cambios respecto al aspecto del juego">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/sudoku/image/tryAgainIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/sudoku/image/winnerIcon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/view/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/view/GameStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sudoku/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sudoku/game-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/view/alert/AlertBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/view/alert/AlertBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "nog",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/natis/AppData/Local/SceneBuilder/SceneBuilder.exe",
+    "last_opened_file_path": "C:/Users/natis/IdeaProjects/sudoku/src/main/resources/com/example/sudoku/image",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -75,6 +75,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\natis\IdeaProjects\sudoku\src\main\resources\com\example\sudoku\image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\natis\IdeaProjects\sudoku\src\main\resources\com\example\sudoku\image" />
     </key>
@@ -113,7 +116,7 @@
       <updated>1713980209528</updated>
       <workItem from="1713980210763" duration="12368000" />
       <workItem from="1714007847205" duration="7214000" />
-      <workItem from="1714059161716" duration="6001000" />
+      <workItem from="1714059161716" duration="7269000" />
     </task>
     <task id="LOCAL-00003" summary="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible">
       <option name="closed" value="true" />
@@ -179,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714060994435</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Cambios respecto al aspecto del juego">
+      <option name="closed" value="true" />
+      <created>1714065300517</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714065300517</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +203,7 @@
     <MESSAGE value="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés, se ingresó tambien una interfaz que explica como jugar el sudoku" />
     <MESSAGE value="bug del boton borrar parcialmente solucionado, aun persisten los bugs de los numeros, tambien se agregó un cambio de color cuando un numero es seleccionado" />
     <MESSAGE value="Se añadió alerts cuando el jugador gana el juego o cuando aun no lo ha terminado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se añadió alerts cuando el jugador gana el juego o cuando aun no lo ha terminado" />
+    <MESSAGE value="Cambios respecto al aspecto del juego" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios respecto al aspecto del juego" />
   </component>
 </project>
