@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés, se ingresó tambien una interfaz que explica como jugar el sudoku">
+    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Se añadió alerts cuando el jugador gana el juego o cuando aun no lo ha terminado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/view/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/view/GameStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sudoku/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sudoku/game-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +60,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;nog&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/natis/IdeaProjects/sudoku - copia&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "nog",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/natis/AppData/Local/SceneBuilder/SceneBuilder.exe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\natis\IdeaProjects\sudoku\src\main\resources\com\example\sudoku\image" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -103,7 +112,8 @@
       <option name="presentableId" value="Default" />
       <updated>1713980209528</updated>
       <workItem from="1713980210763" duration="12368000" />
-      <workItem from="1714007847205" duration="312000" />
+      <workItem from="1714007847205" duration="7214000" />
+      <workItem from="1714059161716" duration="6001000" />
     </task>
     <task id="LOCAL-00003" summary="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible">
       <option name="closed" value="true" />
@@ -137,7 +147,39 @@
       <option name="project" value="LOCAL" />
       <updated>1713996414383</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés, se ingresó tambien una interfaz que explica como jugar el sudoku">
+      <option name="closed" value="true" />
+      <created>1714008260716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714008260716</updated>
+    </task>
+    <task id="LOCAL-00008" summary="bug del boton borrar parcialmente solucionado, aun persisten los bugs de los numeros, tambien se agregó un cambio de color cuando un numero es seleccionado">
+      <option name="closed" value="true" />
+      <created>1714013504460</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714013504460</updated>
+    </task>
+    <task id="LOCAL-00009" summary="bug del boton borrar parcialmente solucionado, aun persisten los bugs de los numeros, tambien se agregó un cambio de color cuando un numero es seleccionado">
+      <option name="closed" value="true" />
+      <created>1714059485770</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714059485770</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Se añadió alerts cuando el jugador gana el juego o cuando aun no lo ha terminado">
+      <option name="closed" value="true" />
+      <created>1714060994435</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714060994435</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +190,8 @@
     <MESSAGE value="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible" />
     <MESSAGE value="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés" />
     <MESSAGE value="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés, se ingresó tambien una interfaz que explica como jugar el sudoku" />
-    <option name="LAST_COMMIT_MESSAGE" value="Permite agregar numeros también por teclado, los comentarios nuevamente estan en inglés, se ingresó tambien una interfaz que explica como jugar el sudoku" />
+    <MESSAGE value="bug del boton borrar parcialmente solucionado, aun persisten los bugs de los numeros, tambien se agregó un cambio de color cuando un numero es seleccionado" />
+    <MESSAGE value="Se añadió alerts cuando el jugador gana el juego o cuando aun no lo ha terminado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se añadió alerts cuando el jugador gana el juego o cuando aun no lo ha terminado" />
   </component>
 </project>

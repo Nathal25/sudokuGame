@@ -6,8 +6,14 @@ import com.example.sudoku.view.alert.AlertBox;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
+
+import javax.swing.text.Element;
+import java.util.ArrayList;
 
 
 public class GameController {
@@ -50,6 +56,7 @@ public class GameController {
 
     private Button activeButton = null;
 
+
     @FXML
     public void initialize() {
 
@@ -57,9 +64,8 @@ public class GameController {
 
         btnDelete.setOnAction(event ->{
             activeButton = btnDelete;
-            activeButton.setText("");
+            activeButton.setText(" ");
         });
-
         //activeButton will establish base on the button selected
         btnOne.setOnAction(event -> {activeButton = btnOne;});
         btnTwo.setOnAction(event -> {activeButton = btnTwo;});
@@ -71,6 +77,14 @@ public class GameController {
         btnEight.setOnAction(event -> {activeButton = btnEight;});
         btnNine.setOnAction(event ->{activeButton = btnNine;});
 
+        Button[] buttons = {btnOne, btnTwo, btnThree, btnFour, btnFive, btnSix, btnSeven, btnEight, btnNine,btnDelete};
+        //This cycle allows each button to change its color when is presed
+        for (Button button : buttons) {
+            button.setOnAction(eventB -> {
+                activeButton = button;
+                updateButtonStyles(buttons);
+            });
+        }
 
         int[][] boardIncomplete = board.getBoardIncomplete();
         int[][] copyBoardIncomplete = new int[9][9];
@@ -89,10 +103,13 @@ public class GameController {
                 textField.setOnMouseClicked(event -> {
                     if(textField.getText().contains(" ")){
                         textField.setEditable(true);
-
                     }
                     if (activeButton != null) { // Verifies is there's the active boton setted
-                        addNumberToTextField(id, textField, activeButton.getText(), boardIncomplete, copyBoardIncomplete);
+                        if(activeButton.equals(btnDelete)) {
+                            textField.setText(" ");
+                        }else{
+                            addNumberToTextField(id, textField, activeButton.getText(), boardIncomplete, copyBoardIncomplete);
+                        }
                     }
                 });
                 textField.setOnKeyTyped(eventK -> {
@@ -123,7 +140,9 @@ public class GameController {
 
                 gridPaneSudoku.add(textField, i, j);
             }
+
         }
+        //Here the verification of the board it's done
         int[][] boardComplete = board.getBoardSolution();
         btnVerify.setOnAction(event -> {
             boolean areEqual = true;
@@ -141,8 +160,18 @@ public class GameController {
             }
             if (areEqual) {
                 System.out.println("Los tableros son iguales, has ganado el juego");
+                String tittle="Juego Finalizado";
+                String header ="¡GANASTE!";
+                String content ="¡Felicidades! Has ganado el juego";
+                AlertBox alertBox=new AlertBox();
+                alertBox.showMessageWinner(tittle,header,content);
             } else {
                 System.out.println("Sigue intentando");
+                String tittle="Sigue intentando";
+                String header ="¡AÚN PUEDES CONSEGUIRLO!";
+                String content ="Sigue intentandolo!";
+                AlertBox alertBox=new AlertBox();
+                alertBox.showMessageLoser(tittle,header,content);
             }
         });
     }
@@ -179,5 +208,16 @@ public class GameController {
                 " ubicado.";
         AlertBox alertBox=new AlertBox();
         alertBox.showMessage(tittle,header,content);
+    }
+    //Gives the style to the buttons
+    private void updateButtonStyles(Button[] buttons) {
+        for (Button button : buttons) {
+            if (activeButton == button) {
+                button.setStyle("-fx-background-color: #9fbd68;-fx-background-radius: 15; -fx-border-radius: 15");
+
+            } else {
+                button.setStyle("-fx-background-color: #bbd686;-fx-background-radius: 15; -fx-border-radius: 15");
+            }
+        }
     }
 }
