@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Cambios respecto al aspecto del juego" />
+    <list default="true" id="17e05bab-a018-4a0e-9f32-bda469836099" name="Changes" comment="Cambios respecto al aspecto del juego y a las alerts">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sudoku/controller/GameController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,20 +56,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "nog",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/natis/IdeaProjects/sudoku/src/main/resources/com/example/sudoku/image",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nog&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/natis/IdeaProjects/sudoku/src/main/resources/com/example/sudoku/image&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\natis\IdeaProjects\sudoku\src\main\resources\com\example\sudoku\image" />
@@ -111,6 +113,7 @@
       <workItem from="1713980210763" duration="12368000" />
       <workItem from="1714007847205" duration="7214000" />
       <workItem from="1714059161716" duration="7311000" />
+      <workItem from="1714071319858" duration="257000" />
     </task>
     <task id="LOCAL-00003" summary="validación final del juego agregada nuevamente.&#10;Se agregó un metodo que se encarga de la logica de agregar los numeros en las casillas, deja el codigo más legible">
       <option name="closed" value="true" />
@@ -192,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714066581228</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Cambios respecto al aspecto del juego y a las alerts">
+      <option name="closed" value="true" />
+      <created>1714071336971</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714071336971</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +217,7 @@
     <MESSAGE value="bug del boton borrar parcialmente solucionado, aun persisten los bugs de los numeros, tambien se agregó un cambio de color cuando un numero es seleccionado" />
     <MESSAGE value="Se añadió alerts cuando el jugador gana el juego o cuando aun no lo ha terminado" />
     <MESSAGE value="Cambios respecto al aspecto del juego" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios respecto al aspecto del juego" />
+    <MESSAGE value="Cambios respecto al aspecto del juego y a las alerts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios respecto al aspecto del juego y a las alerts" />
   </component>
 </project>
