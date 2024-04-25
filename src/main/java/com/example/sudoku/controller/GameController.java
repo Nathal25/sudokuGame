@@ -48,7 +48,6 @@ public class GameController {
     private Board board;
 
     private Button activeButton = null;
-    private boolean controlButton=false;
 
     @FXML
     public void initialize() {
@@ -60,8 +59,7 @@ public class GameController {
             activeButton.setText(" ");
         });
         //activeButton will establish base on the button selected
-        btnOne.setOnAction(event -> {activeButton = btnOne;
-        controlButton=true;});
+        btnOne.setOnAction(event -> {activeButton = btnOne;});
         btnTwo.setOnAction(event -> {activeButton = btnTwo;});
         btnThree.setOnAction(event -> {activeButton = btnThree;});
         btnFour.setOnAction(event -> {activeButton = btnFour;});
