@@ -9,6 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
+import java.util.ArrayList;
+
 
 public class GameController {
     @FXML
@@ -57,7 +59,7 @@ public class GameController {
 
         btnDelete.setOnAction(event ->{
             activeButton = btnDelete;
-            activeButton.setText("");
+            activeButton.setText(" ");
         });
 
         //activeButton will establish base on the button selected
@@ -71,6 +73,14 @@ public class GameController {
         btnEight.setOnAction(event -> {activeButton = btnEight;});
         btnNine.setOnAction(event ->{activeButton = btnNine;});
 
+        Button[] buttons = {btnOne, btnTwo, btnThree, btnFour, btnFive, btnSix, btnSeven, btnEight, btnNine};
+        //This cycle allows each button to change its color when is presed
+        for (Button button : buttons) {
+            button.setOnAction(eventB -> {
+                activeButton = button;
+                updateButtonStyles(buttons);
+            });
+        }
 
         int[][] boardIncomplete = board.getBoardIncomplete();
         int[][] copyBoardIncomplete = new int[9][9];
@@ -89,10 +99,13 @@ public class GameController {
                 textField.setOnMouseClicked(event -> {
                     if(textField.getText().contains(" ")){
                         textField.setEditable(true);
-
                     }
                     if (activeButton != null) { // Verifies is there's the active boton setted
-                        addNumberToTextField(id, textField, activeButton.getText(), boardIncomplete, copyBoardIncomplete);
+                        if(activeButton.equals(btnDelete)) {
+                            textField.setText(" ");
+                        }else{
+                            addNumberToTextField(id, textField, activeButton.getText(), boardIncomplete, copyBoardIncomplete);
+                        }
                     }
                 });
                 textField.setOnKeyTyped(eventK -> {
@@ -179,5 +192,16 @@ public class GameController {
                 " ubicado.";
         AlertBox alertBox=new AlertBox();
         alertBox.showMessage(tittle,header,content);
+    }
+    //Gives the style to the buttons
+    private void updateButtonStyles(Button[] buttons) {
+        for (Button button : buttons) {
+            if (activeButton == button) {
+                button.setStyle("-fx-background-color: #9fbd68;-fx-background-radius: 15; -fx-border-radius: 15");
+
+            } else {
+                button.setStyle("-fx-background-color: #bbd686;-fx-background-radius: 15; -fx-border-radius: 15");
+            }
+        }
     }
 }
