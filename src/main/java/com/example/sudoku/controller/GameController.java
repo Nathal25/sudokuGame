@@ -117,7 +117,7 @@ public class GameController {
                     }
                 });
 
-                //Inserts the numbers in the textFields based on the array selected from Board
+                //Inserts the numbers in the textFields based on the array selected from Board.
                 if (copyBoardIncomplete[i][j] == 0) {
                     textField.setText(" ");
                 } else {
